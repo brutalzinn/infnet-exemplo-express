@@ -38,7 +38,7 @@ const data = [
 
 
 app.get('/', function (req, res) {
-    res.send("Olá mundo, olá Dokku e adeus Heroku!!!. " + Date.now())
+    res.send("Olá mundo, olá Dokku e adeus Heroku!!!. " + Date.now().toLocaleString())
   })
 
 app.get('/lista', function (req, res) {
