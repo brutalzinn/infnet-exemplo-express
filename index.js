@@ -36,6 +36,11 @@ const data = [
     }
 ]
 
+
+app.get('/', function (req, res) {
+    res.send("Olá mundo. " + Date.now)
+  })
+
 app.get('/lista', function (req, res) {
   res.send(data)
 })
@@ -73,4 +78,4 @@ app.delete('/deletar/:id', function (req, res) {
     res.send("OK")
 })
 
-app.listen(3000)
+app.listen(process.env.PORT || 3000)
