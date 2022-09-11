@@ -38,7 +38,7 @@ const data = [
 
 
 app.get('/', function (req, res) {
-    res.send("Olá mundo, olá Dokku e adeus Heroku!!!. Agora com SSL e https://api-bootcamp-teste.apps.robertocpaes.dev/" + new Date().toLocaleString())
+    res.send("Olá mundo, olá Dokku e adeus Heroku!!!" + new Date().toLocaleString())
   })
 
 app.get('/lista', function (req, res) {
