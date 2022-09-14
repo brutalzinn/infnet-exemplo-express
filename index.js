@@ -4,7 +4,7 @@ const app = express()
 const { v4: uuidv4 } = require('uuid');
 
 app.use(express.json());
-//teste
+
 const data = [
     //0
     {
@@ -77,5 +77,4 @@ app.delete('/deletar/:id', function (req, res) {
     
     res.send("OK")
 })
-
-app.listen(process.env.PORT || 5555)
+app.listen(process.env.PORT || 3000)
